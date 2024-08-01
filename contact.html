@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Contact Check This Out Mom</title>
+    <link rel="stylesheet" href="contactStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/kinet@0.2.2/dist/kinet.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text-container">
+                <div class="header-text auto-grow"></div>
+            </div>
+        </div>
+
+        
+        <div class="bento auto-show">
+            <div class="clipboard clipboard-clip"></div>
+            <div class="clipboard clipboard-board">
+                <div class="paper">
+                    <div class="contact-text meat"></div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="489f5bb3-e071-4234-a562-0daba4e14c3a">
+
+                        <label for="senderName">Name:</label><br>
+                        <input type="text" id="senderName" name="senderName" placeholder="Your Name..." required><br>
+                        <label for="senderEmail">Email:</label><br>
+                        <input type="email" id="senderEmail" name="senderEmail" placeholder="Your Email..." required><br>
+                        <label for="senderMessage">Message:</label><br>
+                        <textarea name="senderMessage" id="senderMessage" placeholder="Your Message..." required></textarea><br>
+
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                        
+                        <input type="submit" value="Submit" class="submitButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttonContainer">
+            <div class="rowbuttons">
+                <a href="https://www.instagram.com/checkthisoutmom/" target="blank">
+                    <div class="button">INSTAGRAM</div>
+                </a>
+                <a href="https://github.com/tschang0311" target=”_blank”>
+                    <div class="button">GITHUB</div>
+                </a>
+                <a href="https://www.linkedin.com/in/thomas-chang-16a9838b/" target=”_blank”>
+                    <div class="button">LINKEDIN</div>
+                </a>
+                <a href="./../index.html">
+                    <div class="button">RETURN 2 INDEX</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./contactScript.js"></script>
+</body>
+
+</html>

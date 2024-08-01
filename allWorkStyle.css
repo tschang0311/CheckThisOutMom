@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: rgb(255, 184, 19);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    padding: 1vw;
+    margin-top: 41vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.header{
+    flex: 1;
+    border-radius: 2vw;
+
+    display: flex;
+    gap: 1vw;
+}
+
+.header-logo{
+    flex: 1;
+    border-radius: 2vw;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.CTOM-LOGO{
+    clip-path:circle();
+}
+
+.auto-rotate{
+    animation: autoRotateAnimation;
+    animation-timeline: scroll();
+}
+
+.header-text-container{
+    flex: 5;
+    border-radius: 2vw;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-text{
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: red;
+    max-width: 100%;
+    z-index: 0;
+    mix-blend-mode: normal;
+    font-size: 2vw;
+}
+
+.auto-grow{
+    animation: autoGrowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoGrowAnimation{
+    from{
+        color: rgb(255, 184, 19);
+        font-size: 5vw;
+        padding-bottom: 0vh;
+        max-width: 100%;
+    }to{
+        font-size: 1.5vw;
+    }
+}
+
+.auto-show{
+    animation: autoShowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(400px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.bento{
+    max-height: 100vh;
+    flex: 9;
+    border-radius: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowbuttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    font-family: 'Roboto Mono';
+    color: red;
+    font-size: 1.5vw;
+}
+
+.button:hover {
+    color: white;
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
+.line-break {
+    border: .1vh solid red;
+    height: .2vh;
+    width: 60%;
+}
+
+.product {
+    font-family: 'Roboto Mono';
+    font-size: 1vw;
+}
+
+.product:hover {
+    letter-spacing: 1vw;
+}
+
+.productContainer {
+    margin-top: 50vh;
+}
+
+.banner {
+    font-family: 'Roboto Mono';
+    font-size: 10vh;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+}
+  
+.banner span {
+    display: inline-block;
+    padding-left: 100vw;
+    animation: banner 20s linear infinite;
+}
+  
+.banner2 span {
+    animation-delay: 10s;
+}
+  
+@keyframes banner {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-200vw);
+    }
+}
+  

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 2vw; /* Changed from 20px */
+    height: 2vw; /* Changed from 20px */
+    border-radius: 50%;
+    background-color: #00A2FE;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    padding: 2vw; /* Changed from 1em */
+    margin-top: 41vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.header{
+    flex: 1;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.header-logo{
+    flex: 1;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.CTOM-LOGO{
+    clip-path: circle();
+}
+
+.auto-rotate{
+    animation: autoRotateAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(540deg);
+        max-width: 300%;
+    }to{
+        transform: rotate(0deg);
+        max-width: 100%;
+        margin-left: 2vw; /* Changed from 1em */
+    }
+}
+
+.header-text-container{
+    flex: 5;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-text{
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: red;
+    max-width: 100%;
+    z-index: 0;
+    mix-blend-mode: normal;
+    font-size: 2vw; /* Added for scaling text */
+}
+
+.auto-grow{
+    animation: autoGrowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoGrowAnimation{
+    from{
+        color: #00A2FE;
+        font-size: 3.7vw;
+        margin-left: 2vw; /* Changed from 2em */
+        padding-bottom: 0vh;
+        max-width: 100%;
+    }to{
+        margin-left: 1vw; /* Changed from .5em */
+        font-size: 3vw;
+    }
+}
+
+.auto-show{
+    animation: autoShowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(40vh) scale(0.3); /* Changed from 400px */
+    }to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.bento{
+    max-height: 60vh;
+    flex: 9;
+    border-radius: 2vw; /* Changed from 2em */
+    margin-bottom: 10vh;
+    border: solid 0.2vw red; /* Changed from 2px */
+    padding: 2vw; /* Changed from 2em */
+
+    display: flex;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.column-1{
+    flex: 2;
+    border-radius: 2vw; /* Changed from 2em */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.column-2{
+    flex: 1;
+    border-radius: 2vw; /* Changed from 2em */
+    gap: 2vw; /* Changed from 2em */
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.row{
+    flex: 4;
+    border: 0.2vw solid red; /* Changed from 2px */
+    border-radius: 2vw; /* Changed from 2em */
+}
+
+.row-1{
+    flex: 1;
+}
+
+.row-2{
+    display: flex;
+    border: none;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.row-col{
+    flex: 1;
+    border: 0.2vw solid red; /* Changed from 2px */
+    border-radius: 2vw; /* Changed from 2em */
+}
+
+.box {
+    background-color: white;
+    color: red;
+    font-family: 'Roboto Mono';
+    font-size: 1.3vw;
+    text-align: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .7s ease-out;
+}
+
+.box:hover {
+    color: white;
+    background-color: red;
+    transition: all .2s ease-in;
+    font-size: 1.6vw;
+}
+
+.circle {
+    flex: 1;
+    border-radius: 50%;
+    max-height: 16vw;
+}
+
+.circle:before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}

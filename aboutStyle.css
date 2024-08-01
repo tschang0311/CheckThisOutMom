@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 2vw; /* Changed from 20px */
+    height: 2vw; /* Changed from 20px */
+    border-radius: 50%;
+    background-color: olivedrab;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    padding: 2vw; /* Changed from 1em */
+    margin-top: 41vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.header{
+    flex: 1;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    gap: 2vw; /* Changed from 1em */
+}
+
+.header-logo{
+    flex: 1;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.CTOM-LOGO{
+    clip-path: circle();
+}
+
+.auto-rotate{
+    animation: autoRotateAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(540deg);
+        max-width: 300%;
+    }to{
+        transform: rotate(0deg);
+        max-width: 100%;
+        margin-left: 2vw; /* Changed from 1em */
+    }
+}
+
+.header-text-container{
+    flex: 5;
+    border-radius: 2vw; /* Changed from 2em */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-text{
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: red;
+    max-width: 100%;
+    z-index: 0;
+    mix-blend-mode: normal;
+    font-size: 2vw; /* Added for scaling text */
+}
+
+.auto-grow{
+    animation: autoGrowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoGrowAnimation{
+    from{
+        color: olivedrab;
+        font-size: 5vw;
+        padding-bottom: 0vh;
+        max-width: 100%;
+    }to{
+        font-size: 1.5vw;
+    }
+}
+
+.auto-show{
+    animation: autoShowAnimation;
+    animation-timeline: scroll();
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(40vh) scale(0.3); /* Changed from 400px */
+    }to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.bento{
+    max-height: 60vh;
+    flex: 9;
+    border-radius: 2vw; /* Changed from 2em */
+    margin-bottom: 0vh;
+    border: none;
+
+    gap: 2vw; /* Changed from 1em */
+}
+
+.about-image{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-image: url('Wade_Garrick.png');
+    background-size: cover;
+    background-position-x: -5vw;
+
+    float: left;
+    shape-outside: margin-box;
+    margin-right: 2vw; /* Changed from 2em */
+}
+
+.about-text{
+    padding-top: 1vw;
+    font-family: 'Roboto Mono';
+}
+
+.meat{
+    font-size: 2vw;
+    text-align: left;
+}
+
+.potatoes {
+    padding-top: 1vw;
+    font-size: 1vw;
+    text-align: start;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowbuttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    font-family: 'Roboto Mono';
+    color: red;
+    font-size: 1.5vw; /* Changed from 1vw */
+}
+
+.button:hover {
+    color: white;
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
