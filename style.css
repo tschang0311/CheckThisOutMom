@@ -37,6 +37,11 @@ body{
     gap: 2vw; /* Changed from 1em */
 }
 
+.message {
+    align-self: center;
+    font-family: 'Roboto Mono';
+}
+
 .header{
     flex: 1;
     border-radius: 2vw; /* Changed from 2em */
