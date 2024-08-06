@@ -128,10 +128,11 @@ body{
 }
 
 .meat{
-    font-size: 1.5vw;
+    font-family: 'Roboto Mono';
+    margin-top: 10vh;
+    font-size: 3vw;
     text-align: left;
-    margin-bottom: 5vh;
-    padding-left: 1vh;
+    padding-left: 2vw;
 }
 
 .potatoes {
@@ -207,52 +208,62 @@ a {
     font-size: 1vw;
 }
 
-.paper input{
+input{
     font-family: 'Roboto Mono';
     font-size: 1vw;
     cursor: none;
-    padding: 1vh;
-    margin: 1vh;
+    padding-left: 2vw;
+    padding: 1vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     width: 40%;
-    border: none;
+    border: 1px solid;
     transition-duration: .5s;
 }
 
-.paper textarea{
+textarea{
     font-family: 'Roboto Mono';
     font-size: 1vw;
     cursor: none;
-    padding: 1vh;
-    margin: 1vh;
+    padding-left: 1vw;
+    padding: 1vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     width: 60%;
     height: 10vh;
-    border: none;
+    border: 1px solid;
     transition-duration: .5s;
 }
 
-.paper input:hover{
+input:hover{
     letter-spacing: .1vw;
     transition-duration: .5s;
 }
 
-.paper textarea:hover{
+textarea:hover{
     letter-spacing: .1vw;
     transition-duration: .5s;
 }
 
-.paper label{
+label{
     cursor: none;
-    padding: 1vh;
+    font-family: 'Roboto Mono';
+    padding: 2vw;
 }
 
 form {
+    margin-top: 2vh;
     width: 100%;
 }
 
 .submitButton{
-    background-color:rgb(158, 172, 187);
+    background-color:rgb(174, 205, 63);
+    border: none;
 }
 
 .submitButton:active{
-    background-color: gray;
+    background-color: rgb(201, 255, 6);
+    transition-duration: .01s;
 }

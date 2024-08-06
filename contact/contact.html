@@ -17,9 +17,30 @@
             </div>
         </div>
 
-        
+        <div class="meat"></div>
+
         <div class="bento auto-show">
-            <div class="clipboard clipboard-clip"></div>
+
+            
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="489f5bb3-e071-4234-a562-0daba4e14c3a">
+
+                <label for="senderName">Name:</label><br>
+                <input type="text" id="senderName" name="senderName" placeholder="Your Name..." required><br>
+                <label for="senderEmail">Email:</label><br>
+                <input type="email" id="senderEmail" name="senderEmail" placeholder="Your Email..." required><br>
+                <label for="senderMessage">Message:</label><br>
+                <textarea name="senderMessage" id="senderMessage" placeholder="Your Message..." required></textarea><br>
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+                
+                <input type="submit" value="Submit" class="submitButton">
+            </form>
+
+            <!-- <div class="clipboard clipboard-clip"></div>
             <div class="clipboard clipboard-board">
                 <div class="paper">
                     <div class="contact-text meat"></div>
@@ -35,12 +56,12 @@
                         <textarea name="senderMessage" id="senderMessage" placeholder="Your Message..." required></textarea><br>
 
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                        <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
                         
                         <input type="submit" value="Submit" class="submitButton">
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="buttonContainer">

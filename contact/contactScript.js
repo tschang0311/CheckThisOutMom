@@ -79,7 +79,7 @@ const em = document.querySelector('.meat');
 const meatFX = new TextScramble(em);
 
 const meatNext = () => {
-    meatFX.setText('Get in Touch')
+    meatFX.setText('GET IN TOUCH:')
 };
 meatNext();
 
