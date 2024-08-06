@@ -170,6 +170,7 @@ body{
 
 .row-1{
     flex: 1;
+    padding: .5vw;
 }
 
 .row-2{

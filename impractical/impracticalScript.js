@@ -71,7 +71,7 @@ const fx = new TextScramble(el);
 
 let counter = 0;
 const next = () => {
-    fx.setText('THE IMPRACTICAL')
+    fx.setText('GRAPHIC DESIGN')
 };
 next();
 
