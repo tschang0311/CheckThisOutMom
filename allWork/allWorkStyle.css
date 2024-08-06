@@ -156,10 +156,12 @@ a {
 .product {
     font-family: 'Roboto Mono';
     font-size: 1vw;
+    transition-duration: 1s;
 }
 
 .product:hover {
-    letter-spacing: 1vw;
+    letter-spacing: .5vw;
+    transition-duration: 1s;
 }
 
 .productContainer {

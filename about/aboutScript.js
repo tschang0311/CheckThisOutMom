@@ -79,7 +79,7 @@ const em = document.querySelector('.meat');
 const meatFX = new TextScramble(em);
 
 const meatNext = () => {
-    meatFX.setText('Exploring both the practical and impractical.')
+    meatFX.setText('Everything but the kitchen sink.')
 };
 meatNext();
 
