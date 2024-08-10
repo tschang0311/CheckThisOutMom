@@ -30,7 +30,7 @@ body{
     width: 50vw;
     height: 100vh;
     padding: 1vw;
-    margin-top: 41vh;
+    margin-top: 1vh;
 
     display: flex;
     flex-direction: column;
@@ -43,24 +43,6 @@ body{
 
     display: flex;
     gap: 1vw;
-}
-
-.header-logo{
-    flex: 1;
-    border-radius: 2vw;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.CTOM-LOGO{
-    clip-path:circle();
-}
-
-.auto-rotate{
-    animation: autoRotateAnimation;
-    animation-timeline: scroll();
 }
 
 .header-text-container{
@@ -82,43 +64,15 @@ body{
     font-size: 2vw;
 }
 
-.auto-grow{
-    animation: autoGrowAnimation;
-    animation-timeline: scroll();
-}
-
-@keyframes autoGrowAnimation{
-    from{
-        color: rgb(114, 90, 255);
-        font-size: 5vw;
-        padding-bottom: 0vh;
-        max-width: 100%;
-    }to{
-        font-size: 1.5vw;
-    }
-}
-
-.auto-show{
-    animation: autoShowAnimation;
-    animation-timeline: scroll();
-}
-
-@keyframes autoShowAnimation{
-    from{
-        opacity: 0;
-        transform: translateY(400px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
 .bento{
     max-height: 100vh;
     flex: 9;
     border-radius: 2vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
+
+    display: flex;
+    justify-content: center;
 }
 
 .buttonContainer{
@@ -128,7 +82,7 @@ body{
 
 .rowbuttons{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .button{
@@ -146,27 +100,3 @@ a {
     text-decoration: none;
     cursor: none;
 }
-
-.line-break {
-    border: .1vh solid red;
-    height: .2vh;
-    width: 60%;
-}
-
-.product {
-    font-family: 'Roboto Mono';
-    color: black;
-    font-size: 1vw;
-    transition-duration: 1s;
-}
-
-.product:hover {
-    letter-spacing: .5vw;
-    transition-duration: 1s;
-}
-
-.productContainer {
-    margin-top: 50vh;
-}
-
-  
