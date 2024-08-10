@@ -20,7 +20,7 @@ body{
     width: 2vw;
     height: 2vw;
     border-radius: 50%;
-    background-color: rgb(114, 90, 255);
+    background-color: rgb(120, 70, 39);
     pointer-events: none;
     z-index: 9999;
     mix-blend-mode: multiply;
@@ -89,7 +89,7 @@ body{
 
 @keyframes autoGrowAnimation{
     from{
-        color: rgb(114, 90, 255);
+        color: rgb(120, 70, 39);
         font-size: 5vw;
         padding-bottom: 0vh;
         max-width: 100%;

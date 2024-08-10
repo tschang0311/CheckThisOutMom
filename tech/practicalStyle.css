@@ -168,32 +168,4 @@ a {
     margin-top: 50vh;
 }
 
-.banner {
-    font-family: 'Roboto Mono';
-    font-size: 10vh;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-    width:100%;
-}
-  
-.banner span {
-    display: inline-block;
-    padding-left: 100vw;
-    animation: banner 20s linear infinite;
-}
-
-.banner2 span {
-    animation-delay: 10s;
-}
-  
-@keyframes banner {
-    0% {
-        transform: translateX(100vw);
-    }
-    100% {
-        transform: translateX(-200vw);
-    }
-}
   
