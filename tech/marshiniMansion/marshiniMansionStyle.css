@@ -72,7 +72,8 @@ body{
     margin-bottom: 2vh;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .buttonContainer{
@@ -99,4 +100,32 @@ body{
 a {
     text-decoration: none;
     cursor: none;
+}
+
+iframe {
+    cursor: none;
+    align-self: center;
+    margin-bottom: 2vw;
+}
+
+.description{
+    font-family: 'Roboto Mono';
+    font-size: 1vw;
+    padding: 1vw;
+}
+
+.description-text{
+    text-align: justify;
+}
+
+.linkToGit{
+    color: red;
+    transition-duration: 1s;
+}
+
+.linkToGit:hover{
+    background-color: red;
+    color: white;
+    letter-spacing: .5vw;
+    transition-duration: 1s;
 }

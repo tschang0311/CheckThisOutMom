@@ -1,4 +1,5 @@
 
+
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
@@ -87,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cursor.className = "cursor";
     document.body.appendChild(cursor);
 
-    // Set color based on mouse movement
+    // Set cursor position based on mouse movement
     document.addEventListener("mousemove", function(e) {
         // Calculate cursor position
         const cursorX = e.clientX - cursor.offsetWidth / 2;
@@ -96,12 +97,18 @@ document.addEventListener("DOMContentLoaded", function() {
         // Update cursor position
         cursor.style.left = cursorX + "px";
         cursor.style.top = cursorY + "px";
+    });
 
-        // Calculate hue based on position
-        // const hue = Math.round((e.clientX / window.innerWidth) * 360);
+    // Hide the cursor when over the iframe
+    const iframe = document.querySelector("iframe");
+    if (iframe) {
+        iframe.addEventListener("mouseover", function() {
+            cursor.style.display = 'none';
+        });
 
-        // // Update color
-        // cursor.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+        iframe.addEventListener("mouseleave", function() {
+            cursor.style.display = 'block';
+        });
+    }
+});
 
-    })
-})
