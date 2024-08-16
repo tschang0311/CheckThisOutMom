@@ -102,10 +102,9 @@ a {
     cursor: none;
 }
 
-iframe {
-    cursor: none;
-    align-self: center;
-    margin-bottom: 2vw;
+img{
+    width: 100%;
+    padding: 5vw;
 }
 
 .description{
