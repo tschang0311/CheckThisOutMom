@@ -66,6 +66,7 @@ body{
 .auto-rotate{
     animation: autoRotateAnimation;
     animation-timeline: scroll();
+    animation-duration: 5s;
 }
 
 @keyframes autoRotateAnimation{
